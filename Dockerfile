@@ -25,7 +25,7 @@ RUN gem update --system \
     nodejs \
     tzdata
 
-EXPOSE 8080
+EXPOSE 5000
 
 COPY ["Gemfile", "Gemfile.lock", "/app/"]
 
