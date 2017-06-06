@@ -25,8 +25,6 @@ RUN gem update --system \
     nodejs \
     tzdata
 
-EXPOSE 5000
-
 COPY ["Gemfile", "Gemfile.lock", "/app/"]
 
 RUN apk add --no-cache --virtual build-dependencies \
